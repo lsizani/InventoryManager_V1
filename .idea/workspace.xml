@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a603196-e3cf-4ba3-81fd-e0f9bfd6a0ed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140901100645_create_orders.rb" afterPath="$PROJECT_DIR$/db/migrate/20140901100645_create_orders.rb" />
     </list>
     <ignored path="InventoryManager_V1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -12,8 +12,9 @@
     <file path="/routes.rb" changelist="3a603196-e3cf-4ba3-81fd-e0f9bfd6a0ed" time="1409322095553" ignored="false" />
     <file path="/Gemfile" changelist="3a603196-e3cf-4ba3-81fd-e0f9bfd6a0ed" time="1409322589162" ignored="false" />
     <file path="/orders_controller.rb" changelist="3a603196-e3cf-4ba3-81fd-e0f9bfd6a0ed" time="1409566442028" ignored="false" />
-    <file path="/20140901100645_create_orders.rb" changelist="3a603196-e3cf-4ba3-81fd-e0f9bfd6a0ed" time="1409566328448" ignored="false" />
+    <file path="/20140901100645_create_orders.rb" changelist="3a603196-e3cf-4ba3-81fd-e0f9bfd6a0ed" time="1409569349662" ignored="false" />
     <file path="/new.html.erb" changelist="3a603196-e3cf-4ba3-81fd-e0f9bfd6a0ed" time="1409566819411" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="3a603196-e3cf-4ba3-81fd-e0f9bfd6a0ed" time="1409569361802" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,7 @@
       <file leaf-file-name="20140901100645_create_orders.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20140901100645_create_orders.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="31" selection-start="433" selection-end="433" vertical-scroll-proportion="0.7044199">
+            <state line="17" column="52" selection-start="519" selection-end="519" vertical-scroll-proportion="0.65745854">
               <folding />
             </state>
           </provider>
@@ -125,10 +126,10 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140901100645_create_orders.rb" />
         <option value="$PROJECT_DIR$/app/views/orders/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/orders_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/orders/new.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140901100645_create_orders.rb" />
       </list>
     </option>
   </component>
@@ -641,7 +642,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1040" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -823,7 +824,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140901100645_create_orders.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="433" selection-end="433" vertical-scroll-proportion="0.7044199">
+        <state line="17" column="52" selection-start="519" selection-end="519" vertical-scroll-proportion="0.65745854">
           <folding />
         </state>
       </provider>
