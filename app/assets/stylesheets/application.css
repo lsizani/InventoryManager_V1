@@ -34,6 +34,9 @@ h1{
     width: 75%;
     height: 80%;
 }
-button {
-    color: red;
+.button {
+    color: black;
+    border: 2px solid;
+    border-radius: 25px;
+    text-align: center;
 }
