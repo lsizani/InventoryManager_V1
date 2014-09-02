@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'welcome/index'
 
   InventoryManagerV1::Application.routes.draw do
-    resources :orders
+    resources :orders, :reagents
     root 'welcome#index'
   end
   # The priority is based upon order of creation: first created -> highest priority.

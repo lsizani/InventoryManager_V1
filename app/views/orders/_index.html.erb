@@ -1,0 +1,29 @@
+<table>
+  <thead>
+  <tr>
+    <th>Reagent Name</th>
+    <th>Manufacturer</th>
+    <th>Catalog No.</th>
+    <th>Lot No</th>
+    <th>Received Date</th>
+    <th>Amount Delivered</th>
+    <th>Storage Location</th>
+  </tr>
+  </thead>
+  <tbody>
+  <%= @orders.each do |order|  %>
+      <tr>
+        <td><%= order.reagent_name %></td>
+        <td><%= order.manufacturer %></td>
+        <td><%= order.catalog_no %></td>
+        <td><%= order.lot_no %></td>
+        <td><%= order.delivery_date %></td>
+        <td><%= order.amount_delivered %></td>
+        <td><%= order.reagent_name %></td>
+        <td><%= order.storage_location %></td>
+      </tr>
+  <% end %>
+
+  </tbody>
+
+</table>

@@ -11,21 +11,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140901100645) do
+ActiveRecord::Schema.define(version: 20140902094853) do
 
   create_table "orders", force: true do |t|
     t.string   "requested_by"
-    t.date     "date_requested"
-    t.decimal  "amount"
-    t.string   "name"
+    t.date     "requested_date"
+    t.decimal  "amount_requested"
+    t.string   "reagent_name"
     t.string   "manufacturer"
-    t.string   "catalog_number"
-    t.string   "lot_number"
+    t.string   "catalog_no"
+    t.string   "lot_no"
     t.string   "supplier"
-    t.string   "order_number"
-    t.date     "date_ordered"
+    t.string   "order_no"
+    t.date     "ordered_date"
     t.boolean  "delivered"
-    t.date     "date_delivered"
+    t.date     "delivery_date"
+    t.decimal  "amount_delivered"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "reagents", force: true do |t|
+    t.string   "reagent_name"
+    t.string   "manufacturer"
+    t.string   "catalog_no"
+    t.string   "lot_no"
+    t.string   "supplier"
+    t.string   "order_no"
+    t.date     "ordered_date"
+    t.boolean  "delivered"
+    t.date     "delivered_date"
+    t.decimal  "amount_delivered"
+    t.date     "updated_date"
+    t.date     "expiration_date"
+    t.string   "item_lot_no"
+    t.string   "item_cat_no"
+    t.string   "storage_temp_kit"
+    t.string   "storage_location"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,31 +1,22 @@
-<h1>Inventory Manager </h1>
+<h1>Inventory Manager >> >> >> Reagent List </h1>
 
 <div class="navBar">
+
+  <br>
+    <%= link_to "Reagent List", controller:"welcome", action: "index" %>
+    <br>
+    <pre>   <%= link_to "Request Reagent", controller:"reagents", action: "create" %> </pre>
+
+  <br>
+    <%= link_to "Orders", controller:"orders", action: "index" %>
   <br>
 
-  <a href="/orders/" >
-    <div class="button">
-        Orders
-    </div>
-  </a>
-    <br>
-
-  <a href="/orders/" >
-    <div class="button">
-        Inventory Items
-    </div>
-  </a>
-   <br>
-
-  <a href="/orders/" >
-    <div class="button">
-        Items in Use
-    </div>
-  </a>
+  <br>
+    <%= link_to "Other", controller:"orders", action: "index" %>
+  <br>
 
 </div>
 
 <div class="mainView">
-
-
+  <%= render @view %>
 </div>

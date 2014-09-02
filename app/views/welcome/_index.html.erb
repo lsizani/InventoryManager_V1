@@ -1,0 +1,33 @@
+
+<table>
+  <thead>
+  <tr>
+    <th>Reagent Name</th>
+    <th>Manufacturer</th>
+    <th>Catalog No.</th>
+    <th>Lot No</th>
+    <th>Received Date</th>
+    <th>Expiration Date</th>
+    <th>Amount Delivered</th>
+    <th>Amount Left</th>
+    <th>Storage Location</th>
+  </tr>
+  </thead>
+  <tbody>
+  <%= @reagents.each do |reagent|  %>
+      <tr>
+        <td><%= reagent.reagent_name %></td>
+        <td><%= reagent.manufacturer %></td>
+        <td><%= reagent.catalog_no %></td>
+        <td><%= reagent.lot_no %></td>
+        <td><%= reagent.delivered_date %></td>
+        <td><%= reagent.expiration_date %></td>
+        <td><%= reagent.amount_delivered %></td>
+        <td><%= reagent.reagent_name %></td>
+        <td><%= reagent.storage_location %></td>
+      </tr>
+  <% end %>
+  </tbody>
+
+</table>
+
