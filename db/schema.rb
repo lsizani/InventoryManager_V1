@@ -32,7 +32,10 @@ ActiveRecord::Schema.define(version: 20140902094853) do
   end
 
   create_table "reagents", force: true do |t|
+    t.string   "requested_by"
+    t.date     "requested_date"
     t.string   "reagent_name"
+    t.decimal  "amount_requested"
     t.string   "manufacturer"
     t.string   "catalog_no"
     t.string   "lot_no"

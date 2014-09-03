@@ -11,8 +11,10 @@
     <th>Amount Delivered</th>
     <th>Amount Left</th>
     <th>Storage Location</th>
+    <th>Edit</th>
   </tr>
   </thead>
+
   <tbody>
   <%= @reagents.each do |reagent|  %>
       <tr>
@@ -25,8 +27,10 @@
         <td><%= reagent.amount_delivered %></td>
         <td><%= reagent.reagent_name %></td>
         <td><%= reagent.storage_location %></td>
+        <td><%= link_to 'Edit', edit_reagent_path(reagent) %></td>
       </tr>
   <% end %>
+
   </tbody>
 
 </table>

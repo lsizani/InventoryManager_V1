@@ -8,24 +8,24 @@
 </div>
 
 <div class="mainView">
-<%= form_for :reagent do |r|%>
-    <p>
+  <%= form_for :reagent, url: reagent_path(@reagent), method: :patch do |r|%>
+      <p>
         <%= r.label :requested_By %>
         <%= r.text_field :requested_by %>
 
         <%= r.label :requested_Date %>
         <%= r.date_select( :requested_date )%>
-    </p>
+      </p>
 
-    <p>
+      <p>
         <%= r.label :amount_Requested %>
         <%= r.text_field :amount_requested %>
 
         <%= r.label :Reagent_Name %>
         <%= r.text_field :reagent_name %>
-    </p>
+      </p>
 
-    <p>
+      <p>
         <%= r.label :order_No %>
         <%= r.text_field :order_no %>
 
@@ -46,16 +46,16 @@
         <%= r.label :ordered_Date %>
         <%= r.date_select :ordered_date %>
 
-    </p>
+      </p>
 
-    <p>
+      <p>
         <%= r.label :amount_Delivered %>
         <%= r.text_field :amount_delivered %>
 
         <%= r.label :delivered_Date %>
         <%= r.text_field :delivered_date %>
-    </p>
-    <%= r.submit %>
-<% end %>
+      </p>
+      <%= r.submit %>
+  <% end %>
 
 </div>

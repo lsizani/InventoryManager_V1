@@ -2,7 +2,10 @@ class CreateReagents < ActiveRecord::Migration
   def change
     create_table :reagents do |t|
 
+      t.string  :requested_by
+      t.date    :requested_date
       t.string  :reagent_name
+      t.decimal :amount_requested
 
       t.string  :manufacturer
       t.string  :catalog_no
